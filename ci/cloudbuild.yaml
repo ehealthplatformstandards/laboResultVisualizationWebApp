@@ -1,0 +1,18 @@
+steps:
+  -   name: 'gcr.io/cloud-builders/git'
+      entrypoint: 'bash'
+      args: [ '-c', 'git fetch --unshallow --tags && git checkout ${BRANCH_NAME} && git submodule init && git submodule update' ]
+
+  -   name: 'docker'
+      args: [ 'build', '-t', 'docker.taktik.be/fhirviz-app', '.' ]
+
+  -   name: 'docker.taktik.be/fhirviz-app'
+      entrypoint: sh
+      args: [ '-c', 'cp -af /app/build /workspace' ]
+
+  -   name: 'gcr.io/cloud-builders/gsutil'
+      args: ["-m", "rsync", "-r", "-c", "-d", "./build", "gs://vizapp.icure.dev"]
+
+options:
+  machineType: 'N1_HIGHCPU_8'
+timeout: 1800s
