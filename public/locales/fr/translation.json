@@ -2,6 +2,8 @@
   "ContentHead": {},
   "Header": {},
   "Fhirviz": {
+    "clickOrDrag": "Cliquer ou glisser des fichiers dans cette zone",
+    "singleOrBulkSupport": "Télécharger un ou plusieurs fichiers FHIR pour obtenir une prévisualisation"
   },
   "countries": {
     "afghanistan": "Afghanistan",

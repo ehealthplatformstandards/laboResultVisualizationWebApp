@@ -2,6 +2,8 @@
   "ContentHead": {},
   "Header": {},
   "Fhirviz": {
+    "clickOrDrag": "Click or drag file to this area to upload",
+    "singleOrBulkSupport": "Upload one or several FHIR files to get an inline preview"
   },
   "countries": {
     "afghanistan": "Afghanistan",
