@@ -71,7 +71,7 @@ function FhirViz({ match }: RouteComponentProps<FhirVizRouteParams>): JSX.Elemen
           <InboxOutlined />
         </p>
         <p className="ant-upload-text">{t('FhirViz.clickOrDrag', 'Click or drag file to this area to upload')}</p>
-        <p className="ant-upload-hint">{t('FhirViz.singleOrBulkSupport', 'Upload one or several FHIR files to get an inline preview')}</p>
+        <p className="ant-upload-hint">{t('FhirViz.singleOrBulkSupport', 'Upload one or several FHIR files to display a rendered document')}</p>
       </Dragger>
 
       <Tabs hideAdd type="editable-card" onChange={onChange} activeKey={activeKey} onEdit={onEdit}>
