@@ -56,7 +56,10 @@
 
     tr.title td {
       color: #0484DF;
-      background: #EEF2F6 !important;
+    }
+
+    tr.title.level_0 td {
+      background: #deeeff;
     }
 
     tbody tr td {
@@ -65,6 +68,37 @@
 
     tr:nth-child(even) td {
       background: #f7f9fb;
+    }
+    tr.level_2 td.label {
+      padding-left: 2em;
+    }
+
+    tr.level_3 td.label {
+      padding-left: 2em;
+    }
+
+    tr.level_4 td.label {
+      padding-left: 3em;
+    }
+
+    tr.level_5 td.label {
+      padding-left: 3em;
+    }
+
+    tr.level_6 td.label {
+      padding-left: 4em;
+    }
+
+    tr.level_7 td.label {
+      padding-left: 4em;
+    }
+
+    tr.level_8 td.label {
+      padding-left: 5em;
+    }
+
+    tr.level_9 td.label {
+      padding-left: 6em;
     }
   }
 
