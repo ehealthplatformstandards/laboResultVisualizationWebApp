@@ -155,14 +155,14 @@
       background-color: rgba(107, 128, 148, 0.6);
       color: #EEF2F6;
       border-radius: 10px;
-      padding: 4px 6px 2px;
+      padding: 4px 6px 1px;
       font-size: .8em;
       min-width: 100px;
       text-align: center;
     }
 
     td.toggable div span.inline {
-        min-width: 30px;
+        min-width: 24px;
     }
 
     td.toggable.displayed div span.clicktoshow {
