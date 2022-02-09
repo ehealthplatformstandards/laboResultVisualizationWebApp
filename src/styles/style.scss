@@ -39,7 +39,7 @@
 ********************************************************/
   table.hapiTableOfValues {
     width: 100%;
-    max-width: 880px;
+    max-width: 1200px;
     margin-top: 24px;
     border-spacing: 0;
     border-collapse: collapse;
@@ -64,11 +64,13 @@
 
     tbody tr td {
       padding: .5em 1em;
+      border: 1px solid #DBDFE3;
     }
 
     tr:nth-child(even) td {
       background: #f7f9fb;
     }
+
     tr.level_2 td.label {
       padding-left: 2em;
     }
@@ -109,7 +111,7 @@
   ********************************************************/
   table.hapiPropertyTable {
     width: 100%;
-    max-width: 880px;
+    max-width: 1200px;
     margin-top: 24px;
     border-spacing: 0;
     border-collapse: collapse;
@@ -162,7 +164,7 @@
     }
 
     td.toggable div span.inline {
-        min-width: 24px;
+        min-width: 20px;
     }
 
     td.toggable.displayed div span.clicktoshow {
