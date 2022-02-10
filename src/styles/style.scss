@@ -26,6 +26,47 @@
   font-family: sans-serif;
   margin: 48px;
 
+  td.toggable {
+    cursor: pointer;
+  }
+
+  td.toggable div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  td.toggable div span {
+    background-color: rgba(107, 128, 148, 0.6);
+    color: #EEF2F6;
+    border-radius: 10px;
+    padding: 4px 6px 1px;
+    font-size: .8em;
+    min-width: 100px;
+    text-align: center;
+  }
+
+  td.toggable div span.inline {
+    min-width: 20px;
+  }
+
+  td.toggable.displayed div span.clicktoshow {
+    display: none;
+  }
+
+  td.toggable div span.clicktohide {
+    display: none;
+  }
+
+  td.toggable.displayed div span.clicktohide {
+    display: inline !important;
+  }
+
+  .hidden {
+    display: none;
+  }
+
   div.hapiHeaderText {
     font-size: 1.5em;
     color: #0484DF;
@@ -140,47 +181,6 @@
       padding: .5em 1em;
       margin: 1px;
       border: 1px solid #DBDFE3;
-    }
-
-    td.toggable {
-      cursor: pointer;
-    }
-
-    td.toggable div {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: space-between;
-    }
-
-    td.toggable div span {
-      background-color: rgba(107, 128, 148, 0.6);
-      color: #EEF2F6;
-      border-radius: 10px;
-      padding: 4px 6px 1px;
-      font-size: .8em;
-      min-width: 100px;
-      text-align: center;
-    }
-
-    td.toggable div span.inline {
-        min-width: 20px;
-    }
-
-    td.toggable.displayed div span.clicktoshow {
-      display: none;
-    }
-
-    td.toggable div span.clicktohide {
-      display: none;
-    }
-
-    td.toggable.displayed div span.clicktohide {
-      display: inline !important;
-    }
-
-    .hidden {
-      display: none;
     }
   }
 }
