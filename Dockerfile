@@ -12,5 +12,6 @@ WORKDIR /app
 ENV PATH /app/node_modules/.bin:$PATH
 COPY package.json /app/package.json
 COPY . /app
-RUN yarn
+RUN yarn upgrade \
+  && yarn
 RUN NODE_OPTIONS="--max_old_space_size=4096" yarn run build
