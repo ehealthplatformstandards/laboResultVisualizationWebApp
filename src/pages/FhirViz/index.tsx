@@ -45,7 +45,7 @@ function FhirViz({ match }: RouteComponentProps<FhirVizRouteParams>): JSX.Elemen
   const draggerProps = {
     name: 'file',
     multiple: true,
-    action: validate ? 'https://fhirviz.icure.dev/rest/fhir/r4/viz/div/single/validate' : 'https://fhirviz.icure.dev/rest/fhir/r4/viz/div/single',
+    action: validate ? 'http://<backend>:8912/rest/fhir/r4/viz/div/single/validate' : 'http://<backend>:8912/rest/fhir/r4/viz/div/single',
     onChange: async (info: any) => {
       const { status, name, response, uid } = info.file
       setFileList(info.fileList ?? [])
